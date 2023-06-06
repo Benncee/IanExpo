@@ -22,16 +22,16 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Registration Form</Text>
+      <Text style={styles.title}>Registration Form for New Users</Text>
       <TextInput
         style={styles.input}
-        placeholder="Name"
+        placeholder="Full Name"
         value={name}
         onChangeText={setName}
       />
       <TextInput
         style={styles.input}
-        placeholder="Email"
+        placeholder="Email Address"
         value={email}
         onChangeText={setEmail}
         keyboardType="email-address"
@@ -52,7 +52,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffa31a',
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -60,8 +60,11 @@ const styles = StyleSheet.create({
     width: '80%',
     height: 40,
     borderWidth: 1,
-    borderColor: 'gray',
+    borderColor: 'black',
     marginBottom: 10,
     paddingLeft: 10,
+  },
+  title: {
+    fontWeight: 'bold',
   },
 });
